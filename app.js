@@ -59,33 +59,33 @@ var hobbyIndetail = document.getElementById('hobby-Indetail');
 hobbypic.onclick = function(){
     'use strict';
     var imageLocation = hobbypic.getAttribute('src');
-    if(imageLocation === '/assets/thinking.png'){
-      hobbypic.setAttribute('src','/assets/cricket.jpg');
+    if(imageLocation === './assets/thinking.png'){
+      hobbypic.setAttribute('src','./assets/cricket.jpg');
       hobbyDescribtion.textContent='Watching Cricket';
       hobbyIndetail.textContent = 'I started watching cricket from 2013, '+
       'I used to watch matches and as well as presentations and used to read cricbuzz blogs by which my english got improved '+
       'and also I have learnt about the struggles and failures that one faces to become success and got to know how a team leader and team member should be.';
     }
-    else if(imageLocation === '/assets/cricket.jpg'){
-      hobbypic.setAttribute('src','/assets/movie.png');
+    else if(imageLocation === './assets/cricket.jpg'){
+      hobbypic.setAttribute('src','./assets/movie.png');
       hobbyDescribtion.textContent='Watching Movies and webseries';
       hobbyIndetail.textContent = 'I Love watching webseries and movies on the FDFS irrespective of language and hero. '+
       'Its not that for timepass i watch movies, I learn a lot from movies like cultures, technologies, different ways of thinking a situation and also realities of the present world.';
     }
-    else if(imageLocation === '/assets/movie.png'){
-      hobbypic.setAttribute('src','/assets/insta.gif');
+    else if(imageLocation === './assets/movie.png'){
+      hobbypic.setAttribute('src','./assets/insta.gif');
       hobbyDescribtion.textContent='using Insta';
       hobbyIndetail.textContent = 'I follow a lot of Influencers like Abhiandniyu, projectnightfall, Brut etc. and '+
       'also many news channels, doctors through which I get a lot of Info and knowledge. And I also follow lot of cricket and Film Industry peoples for entertainment and friends for communication ';
     }
-    else if(imageLocation === '/assets/insta.gif'){
-      hobbypic.setAttribute('src','/assets/chatting.jpg');
+    else if(imageLocation === './assets/insta.gif'){
+      hobbypic.setAttribute('src','./assets/chatting.jpg');
       hobbyDescribtion.textContent='Spending time with people';
       hobbyIndetail.textContent = 'As I am from joint family i love being with peoples, talking with them and knowing their perspectives. '+
       'If required some suggestions';
     }
-    else if(imageLocation === '/assets/chatting.jpg'){
-      hobbypic.setAttribute('src','/assets/cricket.jpg');
+    else if(imageLocation === './assets/chatting.jpg'){
+      hobbypic.setAttribute('src','./assets/cricket.jpg');
       hobbyDescribtion.textContent='Watching Cricket';
       hobbyIndetail.textContent = 'I started watching cricket from 2013, '+
       'I used to watch matches and as well as presentations and used to read cricbuzz blogs by which my english got improved '+
