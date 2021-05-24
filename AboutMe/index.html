@@ -17,10 +17,11 @@
         <li class="logoText">YASWANTH</li>
         <li>
           <ul>
-            <li><a href="#Home" class="nav-link">HOME</a></li>
+            <li><a href="#HOME" class="nav-link">HOME</a></li>
             <li><a href="#BIO" class="nav-link">BIO</a></li>
             <li><a href="#PORTFOLIO" class="nav-link">PORTFOLIO</a></li>
             <li><a href="#SKILLS" class="nav-link">SKILLS</a></li>
+            <li><a href="#HOBBIES" class="nav-link">HOBBIES</a></li>
             <li><a href="#CONTACT" class="nav-link link-button">CONTACT</a></li>
           </ul>
         </li>
@@ -28,11 +29,11 @@
     </nav>
 
     <div class="main">
-    <div class="slideshow-container" style="width:100%">
+    <section class="slideshow-container" id="HOME" style="width:100%">
 
       <div class="mySlides fade">
         
-        <div id="HOME">
+        <div id="quote">
         <div >
           <p>I BELIEVE IN</p>
           <h1>EAT(); SLEEP(); CODE(); ENJOY(); REPEAT();</h1>
@@ -43,7 +44,7 @@
       
       <div class="mySlides fade">
         
-        <div id="HOME" >
+        <div id="quote" >
           <div >
             <p>I BELIEVE IN</p>
             <h1>Give ur best and doesn't bother about the results</h1>
@@ -54,7 +55,7 @@
       
       <div class="mySlides fade">
         
-        <div id="HOME" >
+        <div id="quote" >
           <div >
             <p>I BELIEVE IN</p>
             <h1>Work defines the person</h1>
@@ -74,13 +75,13 @@
     --> 
       <a class="next" id="next">&#10095;</a>
       
-    </div>
+    </section>
     <br>
       
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" id="firstSlide" ></span> 
+      <span class="dot" id="secondSlide" onclick="currentSlide(2)"></span> 
+      <span class="dot" id="thirdSlide"  onclick="currentSlide(3)"></span> 
       
     </div>
 
@@ -92,7 +93,7 @@
         <h2>GURRAMKONDA YASWANTH</h2>
         <p>
           I am a passionate Engineer With a degree in Electronics and
-          Communication Engineering from VIT. My very first experience with code was at
+          Communication Engineering from VIT. My very first experience with coding was at
           the time when I started my college projects. I used to search the
           similar codes and modify it according to the project requirement, then
           I got intrest in coding and then I started to practice coding a lot
@@ -101,7 +102,7 @@
           <span class="break"></span>
          
           I have knowledge of HTML, CSS, JavaScript, Java, JSP, Hibernate, Angular.
-          Reading people and goal-oriented Planning are my strengths.
+          Reading people, self belief and goal-oriented Planning are my strengths.
           
           <span class="break"></span>
           Recently, I have been placed in Lister Technologies as a Software Engineer, excited for the new challenges.
@@ -119,18 +120,12 @@
       <hr />
       <div>
         <article>
-          <img
-            src="https://i1.faceprep.in/ProGrad/Coding-icon.svg"
-            alt="image1"
-          />
+          <img src="/assets/coding-icon1.PNG">
           <h4>Business Ludo</h4>
           <p>A commercial game designed using HTML, CSS and JS</p>
         </article>
         <article>
-          <img
-            src="https://i1.faceprep.in/ProGrad/Coding-icon.svg"
-            alt="image1"
-          />
+          <img src="/assets/coding-icon1.PNG">
           <h4>Bag Security</h4>
           <p>
             Bag security is a device which gives the count of books and state of
@@ -138,12 +133,9 @@
           </p>
         </article>
         <article>
-          <img
-            src="https://i1.faceprep.in/ProGrad/Coding-icon.svg"
-            alt="image1"
-          />
-          <h4>Health-Care</h4>
-          <p>Console based Java project with SQL. Where Users can know Info about diseases or can book appointment with doctors</p>
+          <img src="/assets/coding-icon1.PNG">
+          <h4>Health-Insurance</h4>
+          <p>A complete website on customer point of view using Java,JSP,Hibernate</p>
         </article>
       </div>
     </section>
@@ -164,10 +156,10 @@
               <li><progress value="85" max="100"> </progress></li>
               <li>JSP</li>
               <li><progress value="85" max="100"> </progress></li>
-              <li>ANGULAR</li>
-              <li><progress value="80" max="100"> </progress></li>
               <li>SERVLET</li>
               <li><progress value="80" max="100"> </progress></li>
+              <li>ANGULAR</li>
+              <li><progress value="70" max="100"> </progress></li>
             </ul>
           </div>
         </div>
@@ -182,11 +174,26 @@
               <li>HINDI</li>
               <li><progress value="85" max="100"> </progress></li>
               <li>TAMIL</li>
-              <li><progress value="60" max="100"> </progress></li>
+              <li><progress value="65" max="100"> </progress></li>
             </ul>
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="HOBBIES">
+      <div id="hobbies-pic">
+        <h3>HOBBIES</h3>
+        <img id="hobbyPic" src="/assets/thinking.png" >
+        <div class="hobby-describtion" id="hobby-describtion">what I do in my free time --> click the pic</div>
+      </div>
+
+      <div id="hobby-Indetail">
+
+
+      </div>
+
+
     </section>
 
     <footer id="CONTACT">
@@ -198,6 +205,11 @@
       
         <input type="button" class="link-button" id="emailBttn" value="Send Message" />
       </form>
+      <div id="social-media">
+        <a href="https://www.linkedin.com/in/yaswanth-gurramkonda-1054a6156"><img class="social-media-logo" src="/assets/linkedin-logo-trans.png" alt="linkedin-logo"></a>
+        <a href="https://github.com/GurramkondaYaswanth" ><img class="social-media-logo" src="/assets/github-logo-trans.png" alt="github-logo"></a>
+        <a href="https://www.instagram.com/yaswanth_gurramkonda/"><img class="social-media-logo" id="insta-logo" src="/assets/insta-iogo-trans.png" alt="insta-logo"></a>
+      </div>
     </footer>
 
   </div>
