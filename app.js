@@ -114,3 +114,14 @@ function sendMail() {
   alert("Mail has been sent successfully")
   });
   }
+
+
+  const navBttn = document.querySelector(".navicon");
+  navBttn.onclick= () =>{
+    var x = document.getElementById("nav-link-container");
+    if (x.className === "nav-link-container") {
+      x.className = "nav-link-container-none";
+    } else {
+      x.className = "nav-link-container";
+    }
+  }

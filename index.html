@@ -16,14 +16,19 @@
       <ul>
         <li class="logoText">YASWANTH</li>
         <li>
-          <ul>
+          <ul class="nav-link-container-none" id="nav-link-container">
             <li><a href="#HOME" class="nav-link">HOME</a></li>
             <li><a href="#BIO" class="nav-link">BIO</a></li>
             <li><a href="#PORTFOLIO" class="nav-link">PORTFOLIO</a></li>
             <li><a href="#SKILLS" class="nav-link">SKILLS</a></li>
             <li><a href="#HOBBIES" class="nav-link">HOBBIES</a></li>
-            <li><a href="#CONTACT" class="nav-link link-button">CONTACT</a></li>
+            <li><a href="#CONTACT" class="nav-link ">CONTACT</a></li>
           </ul>
+          <div class="navicon">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+          </div>
         </li>
       </ul>
     </nav>
@@ -64,15 +69,6 @@
       </div>
       
       <a class="prev" id="prev">&#10094;</a>
-     <!--<a class="prev" href="javascript:someFunction()" >&#10094;</a>
-        <header id="HOME" >
-      <div >
-        <p>I BELIEVE IN</p>
-        <h1>EAT(); SLEEP(); CODE(); REPEAT();</h1>
-      </div>
-    </header>
-    <div class="numbertext">1 / 3</div>
-    --> 
       <a class="next" id="next">&#10095;</a>
       
     </section>
@@ -80,8 +76,8 @@
       
     <div style="text-align:center">
       <span class="dot" id="firstSlide" ></span> 
-      <span class="dot" id="secondSlide" onclick="currentSlide(2)"></span> 
-      <span class="dot" id="thirdSlide"  onclick="currentSlide(3)"></span> 
+      <span class="dot" id="secondSlide" ></span> 
+      <span class="dot" id="thirdSlide"  ></span> 
       
     </div>
 
@@ -118,15 +114,15 @@
       <h3>PORTFOLIO</h3>
       <p>some of my best projects so far</p>
       <hr />
-      <div>
-        <a href="https://gurramkondayaswanth.github.io/Business-Ludo-Game/" style="text-decoration: none">
+      <div class="projects-list">
+        <a href="https://gurramkondayaswanth.github.io/Business-Ludo-Game/" class="project" style="text-decoration: none">
         <article>
           <img src="./assets/coding-icon1.PNG">
           <h4>Business Ludo</h4>
           <p>A commercial game designed using HTML, CSS and JS</p>
         </article>
       </a>
-      <a href="https://github.com/GurramkondaYaswanth/BAG-SECURITY-using-8051-Microcontroller" style="text-decoration: none">
+      <a href="https://github.com/GurramkondaYaswanth/BAG-SECURITY-using-8051-Microcontroller" class="project" style="text-decoration: none">
         <article>
           <img src="./assets/coding-icon1.PNG">
           <h4>Bag Security</h4>
@@ -136,7 +132,7 @@
           </p>
         </article>
       </a>
-        <a href="https://github.com/GurramkondaYaswanth/Health-Insurance" style="text-decoration: none">
+        <a href="https://github.com/GurramkondaYaswanth/Health-Insurance" class="project" id="project-last" style="text-decoration: none">
         <article>
           <img src="./assets/coding-icon1.PNG">
           <h4>Health-Insurance</h4>
@@ -147,8 +143,8 @@
     </section>
     <section id="SKILLS">
       <h3>SKILLS</h3>
-      <div id="skills">
-        <div>
+      <div id="skills" class="skills">
+        <div id="tech-skills"> 
           <h4>Technical Skills</h4>
           <div>
             <ul>
@@ -205,9 +201,9 @@
     <footer id="CONTACT">
       <h3>CONTACT</h3>
       <form action="">
-        <input class="input" type="text" id="name" placeholder="Enter your Name" />
-        <input class="input" type="text" id="email" placeholder="Enter your Email" />
-        <input class="input" type="text" id="msg" placeholder="Enter your message" />
+        <input class="input" type="text" id="name" placeholder=" Enter your Name" />
+        <input class="input" type="email" id="email" pattern="^[A-Za-z0-9+_.-]+@(.+)$" placeholder=" Enter your Email" />
+        <input class="input" type="text" id="msg" placeholder=" Enter your message" />
       
         <input type="button" class="link-button" id="emailBttn" value="Send Message" />
       </form>
